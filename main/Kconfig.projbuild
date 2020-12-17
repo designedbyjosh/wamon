@@ -1,0 +1,21 @@
+menu "Wamon Configuration"
+
+    config SCAN_LIST_SIZE
+        int "Max size of scan list"
+        range 0 20
+        default 10
+        help
+            The size of array that will be used to retrieve the list of access points.
+
+    config TARGET_NETWORK_SSID
+        string "The SSID of the network the root node should join"
+        default ""
+        help
+            The SSID of the network the root node should join
+
+    config TARGET_NETWORK_PASSPHRASE
+        string "The passphrase of the SSID configured above"
+        default ""
+        help
+            The passphrase of the SSID configured in TARGET_NETWORK_SSID
+endmenu

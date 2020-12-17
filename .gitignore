@@ -7,6 +7,9 @@ GTAGS
 GRTAGS
 GPATH
 
+#sdkconfigXAMPL
+sdkconfig*
+
 # emacs
 .dir-locals.el
 
