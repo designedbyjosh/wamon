@@ -28,6 +28,7 @@
 - [About The Project](#about-the-project)
 - [How to use this](#how-to-use)
 - [Folder contents](#folder-contents)
+- [Development Environment](#development-environment)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -101,6 +102,36 @@ Below is short explanation of remaining files in the project folder.
 ```
 
 For more information on structure and contents of ESP-IDF projects, please refer to Section [Build System](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/build-system.html) of the ESP-IDF Programming Guide.
+
+## Development environment
+
+A sample VSCode configuration file for C and C++ is provided below. Change the compilerPath to be your username on your respective system.
+
+```
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${config:idf.espIdfPath}/components/**"
+            ],
+            "browse": {
+                "path": [
+                    "{config:idf.espIdfPath}/components"
+                ],
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "defines": [],
+            "compilerPath": "/home/${CHANGE_ME}/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}
+```
 
 <!-- CONTRIBUTING -->
 ## Contributing
