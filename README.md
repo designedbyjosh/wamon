@@ -32,40 +32,6 @@
 - [Contributing](#contributing)
 - [License](#license)
 
-<!-- ABOUT THE PROJECe source file in C language [main.c](main/main.c). The file is located in folder [main](main).
-
-ESP-IDF projects are built using CMake. The project build configuration is contained in `CMakeLists.txt` files that provide set of directives and instructions describing the project's source files and targets (executable, library, or both). 
-
-Below is short explanation of remaining files in the project folder.
-
-```
-├── CMakeLists.txt
-├── main
-│   ├── CMakeLists.txt
-│   ├── component.mk           Component make file
-│   └── main.c
-├── Makefile                   Makefile used by legacy GNU Make
-└── README.md                  This is the file you are currently reading
-```
-
-For more information on structure and contents of ESP-IDF projects, please refer to Section [Build System](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/build-system.html) of the ESP-IDF Programming Guide.
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated** because they'll help make me realise that my current approach is potentially garbage and make me a better engineer. I'm here to learn, so please, show me how it's done.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<!-- LICENSE -->
-## License
-
-Distributed under the DWTFYW licence.
-T -->
 ## About The Project
 At the moment, we’re using a stock-standard outdoor irrigation controller that we purchased from Bunnings. It’s wired to two solenoid valves that direct water around to either the front of the house or the rear. Massive thanks to my Dad for running those pipes!
 
