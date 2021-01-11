@@ -1,0 +1,3 @@
+[submodule "libraries/esp-apple-homekit-adk"]
+	path = libraries/esp-apple-homekit-adk
+	url = https://github.com/espressif/esp-apple-homekit-adk.git

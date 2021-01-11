@@ -8,7 +8,10 @@ GRTAGS
 GPATH
 
 #sdkconfigXAMPL
-sdkconfig*
+sdkconfig
+sdkconfig.old
+
+*.bin
 
 # emacs
 .dir-locals.el

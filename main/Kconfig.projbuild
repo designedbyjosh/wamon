@@ -1,21 +1,21 @@
-menu "Wamon Configuration"
+menu "Example Configuration"
 
-    config SCAN_LIST_SIZE
-        int "Max size of scan list"
-        range 0 20
-        default 10
+    config EXAMPLE_WIFI_SSID
+        string "WiFi SSID"
+        default "myssid"
         help
-            The size of array that will be used to retrieve the list of access points.
+            SSID (network name) for the example to connect to.
 
-    config TARGET_NETWORK_SSID
-        string "The SSID of the network the root node should join"
-        default ""
+    config EXAMPLE_WIFI_PASSWORD
+        string "WiFi Password"
+        default "mypassword"
         help
-            The SSID of the network the root node should join
+            WiFi password (WPA or WPA2) for the example to use.
 
-    config TARGET_NETWORK_PASSPHRASE
-        string "The passphrase of the SSID configured above"
-        default ""
+    config EXAMPLE_FACTORY_PARTITION_NAME
+        string "Factory Partition Name"
+        default "fctry"
         help
-            The passphrase of the SSID configured in TARGET_NETWORK_SSID
+            Factory NVS Partition name which will have the HomeKit Setup Info.
+
 endmenu
