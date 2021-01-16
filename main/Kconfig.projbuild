@@ -1,21 +1,26 @@
-menu "Example Configuration"
+menu "Wamon Configuration"
 
-    config EXAMPLE_WIFI_SSID
-        string "WiFi SSID"
-        default "myssid"
+    config USE_HARDCODED_SETUP_CODE
+        bool "Use hard-coded setup code"
+        default y
         help
-            SSID (network name) for the example to connect to.
+            HomeKit does not recommend having the setup code programmed in the accessory as is.
+            Instead, it expects setup info (salt-verifier pair) generated for the given setup code.
+            Use this option only for testing purposes. For production, the setup info should be
+            used.
 
-    config EXAMPLE_WIFI_PASSWORD
-        string "WiFi Password"
-        default "mypassword"
+    config HOMEKIT_HARDCODE_SETUP_CODE
+        string "HomeKit Setup Code"
+        default "111-22-333"
+        depends on USE_HARDCODED_SETUP_CODE
         help
-            WiFi password (WPA or WPA2) for the example to use.
+            Setup code to be used for HomeKot pairing, if hard-coded setup code is enabled.
 
-    config EXAMPLE_FACTORY_PARTITION_NAME
-        string "Factory Partition Name"
-        default "fctry"
+    config HOMEKIT_HARDCODE_SETUP_ID
+        string "HomeKit Setup Id"
+        default "ES32"
+        depends on USE_HARDCODED_SETUP_CODE
         help
-            Factory NVS Partition name which will have the HomeKit Setup Info.
+            Setup id to be used for HomeKot pairing, if hard-coded setup code is enabled.
 
 endmenu
